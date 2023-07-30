@@ -1,0 +1,227 @@
+body {
+    background-image: url("../imagenes/fondo_madera_negra.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    box-shadow: 0 10px 0px rgba(0, 0, 0, 0.1);
+  
+  }
+
+  /* Estilos para los enlaces del menú */
+  nav a {
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    position: relative;
+    padding: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el logotipo */
+  .logo {
+    margin-right: 420px;
+    margin-left: 100px;
+  }
+  
+  
+  
+  /* Estilos para el menú */
+  .menu {
+    display: flex;
+  }
+  
+  /* Estilos para la línea debajo de los enlaces al hacer hover */
+  .menu a .line {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    transition: width 0s ease;
+    visibility: hidden;
+  }
+  
+  /* Estilos para el hover del menú */
+  .menu a:hover .line {
+    width: 100%;
+    visibility: visible;
+  }
+  
+  /* Estilos para el hover del menú */
+  .menu a:hover {
+    transform: translateY(-3px);
+    color: white;
+  }
+  
+  /* Estilos para el contenedor de videos */
+  .video_container {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 200px;
+  }
+  
+  /* Estilos para los videos en el contenedor */
+  .video_container iframe {
+    box-shadow: 0 0 20px white;
+    border-radius: 20px;
+  }
+  
+  /* Estilos para el logotipo adicional */
+  .logo_2 {
+    margin-left: 50px;
+  }
+  
+  /* Estilos para los enlaces internos */
+  .links_internos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+  }
+  
+  /* Estilos para los enlaces internos */
+  .links_internos a {
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+  }
+  
+  /* Estilos para las imágenes en los enlaces internos */
+  .links_internos img {
+    max-width: 100%;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+  }
+  
+  /* Estilos para el texto superpuesto en las imágenes */
+  .imagen-con-texto {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  /* Estilos para el texto superpuesto en las imágenes al hacer hover */
+  .imagen-con-texto .texto-difuso {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    font-weight: 900;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilos para el hover del texto superpuesto en las imágenes */
+  .imagen-con-texto:hover .texto-difuso {
+    opacity: 1;
+  }
+  
+  /* Estilos para el hover de las imágenes en los enlaces internos */
+  .imagen-con-texto img {
+    transition: transform 0.5s;
+  }
+  
+  /* Estilos para el hover de las imágenes en los enlaces internos */
+  .imagen-con-texto img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilos para el botón de ayuda flotante */
+  .ayuda img {
+    float: right;
+    width: 50px;
+  }
+  
+  /* Estilos para el botón de ayuda flotante */
+  .ayuda {
+    position: fixed;
+    top: 900px;
+    right: 25px;
+    z-index: 999;
+  }
+  .ayuda img{
+    width: 65px;
+  }
+  
+  /* Estilos para los íconos de redes sociales en el pie de página */
+  .Instagram_logo,
+  .Twitter_logo,
+  .Github_logo,
+  .Linkedin_logo {
+    width: 50px;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  /* Estilos para la sección de información de contacto */
+  .Contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+  }
+  
+  /* Estilos para los íconos de contacto */
+  .Contactanos img {
+    width: 50px;
+  }
+  
+  /* Estilos para la sección de redes sociales en el pie de página */
+  .redes {
+    text-align: center;
+  }
+  
+  /* Estilos para el logotipo final en el pie de página */
+  .logo_final img {
+    width: 100px;
+  }
+  
+  /* Estilos para los párrafos en el pie de página */
+  .logo_final p{
+    color: white;
+  }
+  .empresa h4{
+    color: white;
+  }
+  .empresa p{
+    color: darkgray;
+  }
+  .ayuda_footer h4{
+    color: white;
+  }
+  .ayuda_footer p {
+    color:darkgrey
+  }
