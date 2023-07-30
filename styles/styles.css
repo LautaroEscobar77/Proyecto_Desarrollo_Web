@@ -50,7 +50,7 @@ body {
   }
   
   /* Estilos para la línea debajo de los enlaces al hacer hover */
-  .menu a .line {
+  .menu a .linea {
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -62,7 +62,7 @@ body {
   }
   
   /* Estilos para el hover del menú */
-  .menu a:hover .line {
+  .menu a:hover .linea {
     width: 100%;
     visibility: visible;
   }
@@ -83,6 +83,10 @@ body {
   
   /* Estilos para los videos en el contenedor */
   .video_container iframe {
+    box-shadow: 0 0 20px white;
+    border-radius: 20px;
+  }
+  .video_container video{
     box-shadow: 0 0 20px white;
     border-radius: 20px;
   }
