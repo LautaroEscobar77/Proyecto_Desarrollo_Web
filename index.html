@@ -4,90 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagenes/logo_2-fotor-bg-remover-20230727235810.png" type="image/x-icon">
+
+    <!--Título-->
+
     <title>Tienda Style</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+
+    <!--Principio Header-->
+
     <header>
+
+        <!--Logo Principal vinculado a "index.html"-->
+
         <div class="logo">
             <a href="index.html">
             <img src="./imagenes/logo_2-fotor-bg-remover-20230727235810.png" alt="Logo de la tienda" width="120">   
         </a>         
         </div>
 
+        <!--Barra de navegacion con vinculos a otras paginas dentro de "Pages"-->
+
         <nav class="menu">
-            <a href="./Pages/tienda.html">TIENDA<span class="linea"></span></a>
-            <a href="./Pages/colecciones.html">COLECCIONES<span class="linea"></span></a>
-            <a href="./Pages/nosotros.html">NOSOTROS<span class="linea"></span></a>
-            <a href="./Pages/contacto.html">CONTACTANOS<span class="linea"></span></a>
+            <ul>
+                <li><a href="./Pages/tienda.html">TIENDA</a></li>
+                <li><a href="./Pages/colecciones.html">COLECCIONES</a></li>
+                <li><a href="./Pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="./Pages/contacto.html">CONTACTANOS</a>></li>
+            </ul>
           </nav>
     </header>
 
+    <!--Fin Header-->
+
+    <!--Principio Section (Videos de Presentacion y Logotipo central)-->
+
     <section class="video_container">
+
+        <!-- Primer video de presentacion (link YouTube)-->
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_r0vlyp33pw?controls=0" autoplay loop="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!--Logo central-->
+
         <div class="logo_2">
             <img src="./imagenes/logo_2-fotor-bg-remover-20230727235810.png" alt="Logo de la tienda">
+
+        <!--Segundo video de presentacion-->
+
            <video src="./imagenes/vide_de_muestra_2.mp4" width="560" height="315" controls controlslist="nodownload" autoplay loop muted> </video>
         </div>
         
     </section>
     
+    <!--Fin Section-->
+
+    <!--Principio Main Inicio (donde esta todo el contenido pricipal)-->
+
     <main class="Inicio">
-        <section class="Inicio1">  
-        </section>
         <section class="links_internos">
+
+            <!--Primera tarjeta vinculada a "tienda.html"-->
+
             <a href="./Pages/tienda.html">
                 <div class="imagen_con_texto">
-                    <img src="./imagenes/imagen_tienda.png" alt="Imagen">
+                    <img src="./imagenes/imagen_tienda.png" alt="Imagen Tienda">
                     <div class="texto_difuso">
                         TIENDA
                     </div>
                 </div>
             </a>
 
+            <!--Segunda tarjeta vinculada a "colecciones.html"-->
+
             <a href="./Pages/colecciones.html">
                 <div class="imagen_con_texto">
-                    <img src="./imagenes/imagen_colecciones.png" alt="Imagen">
+                    <img src="./imagenes/imagen_colecciones.png" alt="Imagen Colecciones">
                     <div class="texto_difuso">
                         COLECCIONES
                     </div>
                 </div>
             </a>
 
+            <!--Tercera tarjeta vinculada a "nosotros.html"-->
+
             <a href="./Pages/nosotros.html">
                 <div class="imagen_con_texto">
-                    <img src="./imagenes/imagen_nosotros_1.png" alt="Imagen">
+                    <img src="./imagenes/imagen_nosotros_1.png" alt="Imagen nosotros">
                     <div class="texto_difuso">
                         NOSOTROS
                     </div>
                 </div>
             </a>
            
-            <a href="./Pages/nosotros.html">
+            <!--Cuarta tarjeta vinculada a "contacto.html"-->
+
+            <a href="./Pages/contacto.html">
                 <div class="imagen_con_texto">
-                    <img src="./imagenes/imagen_contactanos.png" alt="Imagen">
+                    <img src="./imagenes/imagen_contactanos.png" alt="Imagen contacto">
                     <div class="texto_difuso">
                         CONTACTANOS
                     </div>
                 </div>
             </a>
         </section>
+
+        <!--Logo flotante de Whatsapp (ayuda)-->
+
         <div class="ayuda">
             <a href="https://web.whatsapp.com/" target="_blank">
-            <img src="./imagenes/logo_de_whatsapp.png">
+            <img src="./imagenes/logo_de_whatsapp.png" alt="imagen logo whatsapp"> 
         </a>
-        </div> 
-             
+        </div>  
     </main>
+
+    <!--Fin Main Principal-->
+
+    <!--Principio de mi Pie de Página-->
    
     <footer>
+
+        <!--Contacto-->
+
         <div class="Contactanos" id="Contactos">
-            <img src="./imagenes/logo_de_telefono.png" alt="telefono">
+            <img src="./imagenes/logo_de_telefono.png" alt="imagen telefono">
             <p>11 4038-1373</p>
-            <img src="./imagenes/logo_de_email.png" alt="Email">
+            <img src="./imagenes/logo_de_email.png" alt="imagen Email">
             <p>lautaroezequielescobarjob@gmail.com</p>
-            
         </div>
+
+        <!--Redes-->
+
         <div class="redes" id="redes">
             <a href="https://www.instagram.com/lauty_ezze7/" target="_blank">
                 <img class="Instagram_logo" src="./imagenes/logo_de_instagram.png" alt="logo de instagram"></a>
@@ -102,28 +150,33 @@
                 <img class="Linkedin_logo" src="./imagenes/logo_de_linkedin.png" alt="logo de linkedin"></a>
         </div>
         
+        <!--Logo final-->
+
         <div class="logo_final">
             <img src="./imagenes/logo_2-fotor-bg-remover-20230727235810.png" alt="Logo de la tienda">
             <p>Derechos Reservados &COPY;</p>
         </div>
+
         <div class="empresa">
-            <h4>EMPRESA</h4>
+            <p>EMPRESA</p>
             <p>¿Quiénes somos?</p>
-            <P>Política de privacidad</P>
-            <P>Términos de servicio</P>
-            <P>Contacto</P>
-            <P>Prensa</P>
-            <P>Socios</P>
-            <P>Afiliado</P>
+            <p>Política de privacidad</p>
+            <p>Términos de servicio</p>
+            <p>Contacto</p>
+            <p>Prensa</p>
+            <p>Socios</p>
+            <p>Afiliado</p>
         </div>
         <div class="ayuda_footer">
-            <h4>AYUDA</h4>
-            <P>Centro de ayuda</P>
-            <P>Tutorial</P>
-            <P>Costo</P>
-            <P>NGO</P>
+            <p>AYUDA</p>
+            <P>Centro de ayuda</p>
+            <p>Tutorial</p>
+            <p>Costo</p>
+            <p>NGO</p>
         </div>
     </footer>
+
+    <!--Fin  de mi Pie de Página-->
     
 </body>
 </html>
