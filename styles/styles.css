@@ -1,5 +1,6 @@
 /* Estilos de index.html */
 
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
 body {
@@ -28,6 +29,8 @@ body {
     right: 0px;
     width: 100%;
   }
+
+
   
   /* Estilos para los elementos de la lista */
   .menu li {
@@ -134,12 +137,12 @@ body {
     
   /* Estilos para las imágenes en los enlaces internos */
   .links_internos img {
-    max-width: 100%;
+    max-width: 95%;
     border-radius: 10px;
     box-shadow: 0 0 20px black;
-    margin-bottom: 60px;
+    margin-bottom: 60px; 
   }
-  
+
   /* Estilos para el texto superpuesto en las imágenes */
   .imagen_con_texto {
     position: relative;
@@ -210,60 +213,165 @@ footer {
   padding: 20px;
   background-color: black;
 }
-  
-  /* Estilos para la sección de información de contacto */
-  .Contactanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: aliceblue;
-  }
-  
-  /* Estilos para los íconos de contacto */
-  .Contactanos img {
-    width: 50px;
-  }
-  
-  /* Estilos para la sección de redes sociales en el pie de página */
-  .redes {
-    text-align: center;
-  }
-  
-  /* Estilos para el logotipo final en el pie de página */
-  .logo_final img {
-    position: absolute;
-    width: 100px;
-    transform: translate(-50%, -50%);
-  }
-  
-  .logo_final p{
-    position: absolute;
-    color: white;
-    transform: translate(-50%, -50%);
-    margin-top: 40px;
-  }
-  .empresa h4{
-    color: white;
-  }
-  .empresa p{
-    color: rgb(255, 255, 255);
-  }
-  .ayuda_footer h4{
-    color: white;
-  }
-  .ayuda_footer p {
-    color:rgb(255, 255, 255)
-  }
 
+/* Estilos para la sección de información de contacto */
+.Contactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+}
+
+/* Estilos para los íconos de contacto */
+.Contactanos img {
+  width: 50px;
+}
+
+/* Estilos para la sección de redes sociales en el pie de página */
+.redes {
+  text-align: center;
+}
+
+/* Estilos para el logotipo final en el pie de página */
+.logo_final img {
+  position: absolute;
+  width: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.logo_final p{
+  position: absolute;
+  color: white;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+}
+.empresa h4{
+  color: white;
+}
+.empresa p{
+  color: rgb(255, 255, 255);
+}
+.ayuda_footer h4{
+  color: white;
+}
+.ayuda_footer p {
+  color:rgb(255, 255, 255)
+}
+
+
+.nosotros {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.nosotros h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.nosotros .contenido-nosotros {
+  display: flex;
+  flex-direction: column;
+}
+
+.nosotros .contenido-nosotros .quienes-somos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.nosotros .contenido-nosotros .quienes-somos img {
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 35%;
+}
+
+.nosotros .contenido-nosotros .invert {
+  flex-direction: column-reverse;
+}
+
+
+@media (min-width: 996px) {
+  .nosotros .contenido-nosotros .quienes-somos {
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nosotros .contenido-nosotros .quienes-somos div h2 {
+    padding: 20px;
+    width: 35%;
+  }
+  .nosotros .contenido-nosotros .quienes-somos img {
+    width: 50%;
+  }
+}
+
+/* Estilos para colecciones.html */
+
+.colecciones {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.colecciones h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+.colecciones .contenido {
+  display: flex;
+  flex-direction: column;
+}
+.colecciones .contenido .coleccion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+.colecciones .contenido .coleccion img {
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 35%;
+}
+.colecciones .contenido .coleccion  h2 {
+  color: rgb(70, 31, 31);
+  font-size: 25px;
+}
+.colecciones .contenido .invert {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 1920px) {
+  .colecciones .contenido .coleccion {
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .colecciones .contenido .coleccion div {
+    padding: 20px;
+    width: 35%;
+  }
+  .colecciones .contenido .coleccion img {
+    width: 50%;
+  }
+}
+
+
+  
+  /* Estilos de Nosotros.html */
+
+  
   /*Estilos de Contacto.html*/
 
   .contacto {
     display: grid;
     place-items: center;
-    margin-top: 100px;
-  }
-  
-  .contacto h1 {
     margin-top: 100px;
   }
 
