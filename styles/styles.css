@@ -4,15 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
 body {
-    background-image: url("../imagenes/fondo-madera-negra.png");
+    background-image: url("../img/fondo-madera-negra.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: "Montserrat", sans-serif;
-  }
-
-  footer {
-    font-family:Arial, Helvetica, sans-serif
   }
 
   /* Estilos para el encabezado */
@@ -30,12 +26,17 @@ body {
     width: 100%;
   }
 
+  .logo {
+    display: flex;
+    position:relative;
+    right: 350px; 
+  }
 
-  
   /* Estilos para los elementos de la lista */
   .menu li {
     display: inline-block;
-    margin-right: 50px;
+    margin-top: 20px;
+    margin-right: 100px;
     position: relative;
   }
   
@@ -73,12 +74,12 @@ body {
 /* Estilos para el contenedor de videos */
 .video_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
-  grid-gap: 20px; /* Espacio entre los elementos */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 50px; /* Ajusta según tus necesidades */
+  margin: 20px auto;
 }
 
 .video_container video {
@@ -86,18 +87,13 @@ body {
   box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
 
-.logo {
-  display: flex;
-  position:relative;
-  right: 440px;
-  
-}
 /* Estilos para cada elemento de video */
 .Inicio .texto-ropa {
   color: white;
   text-align:start;
   line-height: 1.8;
   text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  margin-right: 30PX;
 }
 /* Estilos para la imagen de logo */
 .logo_2 img {
@@ -160,7 +156,6 @@ body {
     transition: opacity 0.4s ease-in-out;
     font-size: 17px;
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
-    
   }
   
   /* Estilos para el hover del texto superpuesto en las imágenes */
@@ -179,12 +174,6 @@ body {
   }
   
   /* Estilos para el botón de ayuda flotante */
-  .ayuda img {
-    float: right;
-    width: 50px;
-  }
-  
-  /* Estilos para el botón de ayuda flotante */
   .ayuda {
     position: fixed;
     width: 65px;
@@ -197,23 +186,160 @@ body {
     width: 65px;
   }
   
+
+  /* Aplicar estilos en dispositivos móviles */
+@media screen and (max-width: 490px) {
+  header {
+    justify-content: space-between; /* Distribución de los elementos */
+    padding: 00px; /* Ajustar según necesidades */
+  }
+
+  
+
+  .menu {
+    display: block; /* Mostrar los enlaces uno debajo del otro */
+    text-align: center center; /* Centrar los enlaces */
+  }
+
+  .video_container {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 30px;
+  }
+
+  .Inicio h1 {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    
+  }
+
+  .video_container video {
+    width: 100%; /* Asegurar que el video se ajuste al ancho */
+    height: auto;
+  }
+
+  .texto-ropa {
+    font-size: 14px; /* Reducir tamaño del texto */
+    padding: 10px;
+  }
+
+  .links_internos {
+    grid-template-columns: repeat(1, 1fr); /* Mostrar 2 columnas en dispositivos móviles */
+    grid-gap: 0px;
+    padding: 10px;
+    margin-top: 100px;
+  }
+  .ayuda {
+    position: fixed;
+    width: 30px;
+    top: 810px;
+    right: 30px;
+    z-index: 999;
+  }
+  /* Estilos para la imágen de ayuda */
+  .ayuda img{
+    width: 50px;
+  }
+
+  footer {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+  }
+
+  /* Estilos para la sección de información de contacto */
+  .Contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+  }
+
+  /* Estilos para los íconos de contacto */
+  .Contactanos img {
+    width: 40px;
+  }
+
+  /* Estilos para la sección de redes sociales en el pie de página */
+  .redes {
+    text-align: center;
+    margin: 40px;
+  }
+
   /* Estilos para los íconos de redes sociales en el pie de página */
   .Instagram_logo,
   .Twitter_logo,
   .Github_logo,
   .Linkedin_logo {
-    width: 50px;
+    width: 40px;
+    margin: 0 10px;
   }
-  
+
+  /* Estilos para el logotipo final en el pie de página */
+  .logo_final img {
+    width: 80px;
+    transform: translate(-50%, -50%);
+  }
+
+  .logo_final p {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  .empresa,
+  .ayuda_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear verticalmente al inicio */
+    align-items: flex-start; /* Alinear horizontalmente al inicio */
+    width: 50%;
+    margin-top: 90px;
+  }
+
+  .ayuda_footer {
+    justify-content: flex-end; /* Alinear verticalmente al final */
+    align-items: flex-end; /* Alinear horizontalmente al final */
+  }
+
+  .empresa h4,
+  .ayuda_footer h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .empresa p,
+  .ayuda_footer p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+
+  .empresa p,
+  .ayuda_footer p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-top: 10px; /* Espaciado superior */
+  }
+}
+
 /* Estilos para el pie de página */
 footer {
   display: flex;
+  font-family:Arial, Helvetica, sans-serif;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: black;
 }
-
+  
 /* Estilos para la sección de información de contacto */
 .Contactanos {
   display: flex;
@@ -230,6 +356,14 @@ footer {
 /* Estilos para la sección de redes sociales en el pie de página */
 .redes {
   text-align: center;
+}
+
+/* Estilos para los íconos de redes sociales en el pie de página */
+.Instagram_logo,
+.Twitter_logo,
+.Github_logo,
+.Linkedin_logo {
+  width: 50px;
 }
 
 /* Estilos para el logotipo final en el pie de página */
@@ -259,56 +393,23 @@ footer {
 }
 
 
-.nosotros {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.nosotros h1 {
-  display: flex;
-  justify-content: center;
-  color: white;
-  padding: 20px;
-}
-
-.nosotros .contenido-nosotros {
-  display: flex;
-  flex-direction: column;
-}
-
-.nosotros .contenido-nosotros .quienes-somos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: justify;
-}
-
-.nosotros .contenido-nosotros .quienes-somos img {
-  object-fit: cover;
-  border-radius: 10px;
-  max-width: 35%;
-}
-
-.nosotros .contenido-nosotros .invert {
-  flex-direction: column-reverse;
-}
 
 
-@media (min-width: 996px) {
-  .nosotros .contenido-nosotros .quienes-somos {
-    flex-direction: row;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .nosotros .contenido-nosotros .quienes-somos div h2 {
-    padding: 20px;
-    width: 35%;
-  }
-  .nosotros .contenido-nosotros .quienes-somos img {
-    width: 50%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para colecciones.html */
 
@@ -331,12 +432,13 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
   text-align: justify;
 }
 .colecciones .contenido .coleccion img {
   object-fit: cover;
   border-radius: 10px;
-  max-width: 35%;
+  box-shadow: 0 0 20px black;
 }
 .colecciones .contenido .coleccion  h2 {
   color: rgb(70, 31, 31);
@@ -346,7 +448,7 @@ footer {
   flex-direction: column-reverse;
 }
 
-@media (min-width: 1920px) {
+@media screen and (min-width: 490px) {
   .colecciones .contenido .coleccion {
     flex-direction: row;
     padding: 20px;
@@ -354,17 +456,102 @@ footer {
     justify-content: space-evenly;
   }
   .colecciones .contenido .coleccion div {
-    padding: 20px;
+    padding: 0 20px;
     width: 35%;
   }
   .colecciones .contenido .coleccion img {
+    width: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para nosotros.html */
+
+.nosotros {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.nosotros h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.nosotros .contenido-nosotros {
+  display: flex;
+  flex-direction: column;
+}
+
+.nosotros .contenido-nosotros .quienes-somos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: justify;
+}
+
+.nosotros .contenido-nosotros .quienes-somos img {
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  margin: 20px;
+}
+
+.nosotros .contenido-nosotros .invert img {
+  box-shadow: none;
+  max-width: 40%;
+}
+
+.nosotros .contenido-nosotros .invert {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 490px) {
+  .nosotros .contenido-nosotros .quienes-somos {
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nosotros .contenido-nosotros .quienes-somos div h2 {
+    padding: 20px;
+    width: 35%;
+  }
+  .nosotros .contenido-nosotros .quienes-somos img {
     width: 50%;
   }
 }
 
 
-  
-  /* Estilos de Nosotros.html */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   /*Estilos de Contacto.html*/
@@ -380,6 +567,7 @@ footer {
     text-align: justify;
     max-width: 600px;
     line-height: 25px;
+    margin-top: 20PX;
   }
 
   .formulario label {
@@ -429,8 +617,14 @@ footer {
   border: none;
   border-radius: 4px;
   width: 100%;
-
+  box-shadow: 0 0 5px black;
 }
+
+
+
+
+
+
 
 
 
