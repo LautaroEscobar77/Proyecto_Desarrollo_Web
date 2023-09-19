@@ -1,17 +1,15 @@
 /* Estilos de index.html */
-// Definir variables
-$color-fondo: black;
-$color-texto: white;
-$font-family: "Montserrat", sans-serif;
+
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
-
+ 
 body {
     background-image: url("../img/Space.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: "Montserrat", sans-serif;
+    font-size: 10px;
   }
 
   /* Estilos para el encabezado */
