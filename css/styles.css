@@ -26,14 +26,22 @@ body {
     width: 100%;
   }
 
+  .navbar-nav a.nav-link {
+    color: #fff; 
+    text-decoration: none;
+}
+
   .logo {
     display: flex;
     position:relative;
     right: 250px;
 
   }
+  .logo img {
+    max-width: 100px;
+  }
 
-  
+
   
 /* Estilos para el contenedor de videos */
 .video_container {
@@ -269,8 +277,7 @@ body {
     align-items: flex-end; /* Alinear horizontalmente al final */
   }
 
-  .empresa h4,
-  .ayuda_footer h4 {
+  .empresa h2, h3 {
     color: white;
     font-size: 18px;
     margin-bottom: 5px;
@@ -341,7 +348,7 @@ footer {
   transform: translate(-50%, -50%);
   margin-top: 40px;
 }
-.empresa h4{
+.empresa h2, h3{
   color: white;
 }
 .empresa p{
