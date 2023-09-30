@@ -31,6 +31,21 @@ header {
   position: relative;
   right: 250px; }
 
+  .navbar-nav a.nav-link {
+    color: #fff; 
+    text-decoration: none;
+}
+
+  .logo {
+    display: flex;
+    position:relative;
+    right: 250px;
+
+  }
+  .logo img {
+    max-width: 100px;
+  }
+
 /* Estilos para el contenedor de videos */
 .video_container {
   display: grid;
